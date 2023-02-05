@@ -18,7 +18,7 @@ function App() {
   return (
     <main>
       <div className="products">
-        {products.slice(page*5-5,page*5).map((p)=>{
+        {products.slice(page*10-10,page*10).map((p)=>{
           return <span key={p.id} className="single--products">
                    <img src={p.thumbnail} alt={p.title}/>
                    <span>{p.title}</span>
@@ -40,7 +40,7 @@ function App() {
         <span onClick={()=>{
             setPage(page+1)
         }}
-        className={page>=products.length/5?"disable":""}
+        className={page>=products.length/10?"disable":""}
         >Next</span>
       </div>
     </main>
