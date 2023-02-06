@@ -11,7 +11,7 @@
 }
 body{
     background:linear-gradient(to top,var(--v-dr-blue),var(--lg-blue));
-    font-family: monospace;
+    font-family:'Times New Roman', Times, serif;
 
 }
 .products{
@@ -20,8 +20,6 @@ body{
     grid-template: auto auto /repeat(5,1fr);
     gap: 50px 40px;
     padding: 40px;
-    
-
 }
 .single--products{
     background:linear-gradient(0.25turn,var(--blue),var(--lg-blue),var(--dr-blue));
@@ -32,7 +30,10 @@ body{
     line-height:20px;
     color: white;
     font-weight: 200;
-   cursor: pointer;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -moz-box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .single--products>img{
     width: 120px;
@@ -60,7 +61,7 @@ body{
     padding-bottom: 15px;
     background-color:var(--dr-blue);
     border-radius:5px;
-    color: var(--v-lg-blue);
+    color:var(--v-lg-blue);
 }
 .selected{
     background-color:var(--dr--blue);
